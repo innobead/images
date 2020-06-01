@@ -4,8 +4,7 @@ WORKDIR /workspace
 
 COPY *.sh /workspace/bin/
 
-RUN cd /workspace/bin; \
-    ./install.sh; \
-    ./clean.sh
+RUN ./bin/install.sh; \
+    ./bin/clean.sh
 
 ENTRYPOINT ["/bin/bash"]
