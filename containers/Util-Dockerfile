@@ -1,9 +1,0 @@
-FROM opensuse/tumbleweed:latest
-MAINTAINER innobead@gmail.com
-
-WORKDIR /workspace
-
-RUN zypper in -y curl; \
-    zypper cc
-
-ENTRYPOINT ["/bin/bash"]
